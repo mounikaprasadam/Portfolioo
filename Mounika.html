@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mounika Prasadam | Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background: #f5f5f5; color: #333; }
+        nav { background: rgba(17,17,17,0.9); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px); }
+        nav a { color: white; margin-left: 1rem; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+        nav a:hover { color: #6a11cb; }
+        .hero { background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1c2luZXNzfGVufDB8fDB8fHww') center/cover no-repeat; color: white; text-align: center; padding: 120px 20px; position: relative; }
+        .hero::after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); z-index: 1; }
+        .hero-content { position: relative; z-index: 2; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+        .hero a { margin: 0 10px; padding: 12px 25px; background: white; color: #2575fc; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .hero a:hover { background: #2575fc; color: white; }
+        .section-title { font-size: 2.5rem; text-align: center; margin-bottom: 40px; position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 4px; background: linear-gradient(to right, #6a11cb, #2575fc); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
+        section { padding: 100px 20px; }
+        .about, .skills { color: white; background-size: cover; background-position: center; }
+        .overlay-card { background: rgba(0,0,0,0.7); padding: 50px; border-radius: 20px; max-width: 900px; margin: 0 auto; text-align: center; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .project-card { background-size: cover; border-radius: 20px; overflow: hidden; position: relative; height: 250px; }
+        .project-card-content { position: absolute; bottom: 0; background: rgba(0,0,0,0.6); color: white; padding: 20px; width: 100%; }
+        .project-card a { color: #d9e5ed; text-decoration: underline; }
+        .progress-bar { background: #444; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+        .progress-bar span { display: block; padding: 10px; border-radius: 10px 0 0 10px; background: linear-gradient(to right, #6a11cb, #2575fc); color: white; }
+        .contact { background: #111; color: white; text-align: center; padding: 60px 20px; }
+        .contact a { color: white; margin: 0 10px; font-size: 1.5rem; transition: color 0.3s; }
+        .contact a:hover { color: #6a11cb; }
+        footer { background: #111; color: #ccc; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div>Mounika Prasadam</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Mounika</h1>
+            <p>AI & Software Developer | Python | ML Enthusiast</p>
+            <a href="mounikaprasadamAI.pdf">Download Resume</a>
+            <a href="https://github.com/mounikaprasadam">GitHub</a>
+            <a href="https://linkedin.com/in/15M">LinkedIn</a>
+        </div>
+    </section>
+
+    <section id="about" class="about" style="background-image: url('https: //images .unsplash .com/photo -1531497865156px;-0464ef8fb9a4');">
+        <div class="overlay-card">
+            <h2 class="section-title">About Me</h2>
+            <p>Aspiring Data Scientist currently working as an AI Intern at Infosys, gaining practical experience in machine learning model development, data preprocessing, and business problem-solving. Proficient in Python, SQL, and data visualization tools . Hands-on experience in building predictive models and working with real-world datasets during internship and academic projects. Strong analytical and problem-solving mindset with a keen interest in applying AI/ML techniques to drive data-driven solutions. Eager to contribute to a dynamic team and grow as a Data Science professional.</p>
+            
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1591696205602-2f950c417cb9');">
+                <div class="project-card-content">
+                    <h4>Bank Customer Churn Prediction</h4>
+                    <p>Python, Pandas, NumPy, scikit-learn</p>
+                    <a href="https://github.com/mounikaprasadam/bankchurn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5luiWwwy7N7oZOjVyDqh2Aqk53y98C5n0g&s');">
+                <div class="project-card-content">
+                    <h4>Hospital Food Delivery System</h4>
+                    <p>HTML, CSS, Node.js, MySQL</p>
+                    <a href="https://github.com/mounikaprasadam/Hospital-food-delivery-management">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" style="background-image: url('data:image/jpeg;base64,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');">
+                <div class="project-card-content">
+                    <h4>Portfolio Website</h4>
+                    <p>HTML, CSS</p>
+                    <a href="https://github.com/mounikaprasadam/Portfolio">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills" style="background-image: url('https://images.unsplash.com/photo-1549921296-3c6b0b1777c7');">
+        <div class="overlay-card">
+            <h2 class="section-title">Skill Set</h2>
+            <div class="progress-bar"><span style="width: 90%;">Python, C/C++, Java</span></div>
+            <div class="progress-bar"><span style="width: 85%;">Pandas, NumPy, Matplotlib</span></div>
+            <div class="progress-bar"><span style="width: 80%;">Regression, Trees, KNN, Clustering</span></div>
+            <div class="progress-bar"><span style="width: 75%;">HTML, CSS, Node.js, MySQL</span></div>
+            <div class="progress-bar"><span style="width: 90%;">Git, VS Code</span></div>
+            <div class="progress-bar"><span style="width: 85%;">DBMS, SQL, OS, OOPs</span></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Let's Create Together</h2>
+        <h3>Reach Out</h3>
+        <p>Email: mounikasrinivasarao03@gmail.com</p>
+        <div>
+            <a href="https://github.com/mounikaprasadam"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/15M"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy;  created by Mounika 
+    </footer>
+
+</body>
+</html>
